@@ -1,283 +1,956 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Rafiq</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="images/Group 81.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/images/logo1.jpeg">
-    <title>Video Sharing Platform UI | AsmrProg</title>
-</head>
-
-<body>
-
-    <div class="left-section">
-        <div class="logo">
-            <img src="assets/images/logo.png">
-            <a href="#">AsmrProg</a>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand navbar-logo" href="#">
+          <img src="images/logo50.svg" alt="logo" class="logo-1" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="" data-scroll-nav="0">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="1">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="2">SERVICES</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="3">Team</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="4">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="5">Faq</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="sidebar">
-            <div class="item active">
-                <i class="ri-home-4-line"></i>
-                <h3>Dashboard</h3>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-------Banner Start------->
+    <section class="banner" data-scroll-index="0">
+      <div class="banner-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <div class="banner-text">
+                <h2 class="white">Welcome to the safest Rafeeq community!</h2>
+                <!-- <h6 class="white">
+                  This awesome template designed by
+                  <a
+                    href="http://w3Template.com"
+                    target="_blank"
+                    rel="dofollow"
+                    class="weblink"
+                    >W3 Template</a
+                  >.
+                </h6> -->
+                <p class="banner-text white">
+                  We strive to make you comfortable by all means in choosing
+                  your next destination, Rafeeq is like a friend by your side at
+                  all times and in all places.
+                </p>
+                <ul>
+                  <li>
+                    <a href="#aboutus" class="banner-btn">Learn More</a>
+                    <!-- <a href="#"
+                      ><img
+                        src="images/appstore.png"
+                        class="wow fadeInUp"
+                        data-wow-delay="0.4s"
+                    /></a> -->
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><img
+                        src="images/playstore.png"
+                        class="wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    /></a>
+                  </li> -->
+                </ul>
+              </div>
             </div>
-            <div class="item">
-                <i class="ri-user-6-line"></i>
-                <h3>My Channel</h3>
+            <div class="col-md-4 col-sm-12">
+              <img
+                src="images/Rafiq home.png"
+                class="wow fadeInUp"
+                style="height: 600px; max-width: 100%"
+              />
             </div>
-            <div class="item">
-                <i class="ri-history-line"></i>
-                <h3>History</h3>
-            </div>
-            <div class="item">
-                <i class="ri-movie-2-line"></i>
-                <h3>Popular</h3>
-            </div>
-            <div class="item" onclick="location.href='picture.html'">
-                <i class="ri-film-line"></i>
-                <h3>Pictures</h3>
-            </div>
-            <div class="item">
-                <i class="ri-chat-1-line"></i>
-                <h3>Messages</h3>
-            </div>
-            <div class="item">
-                <i class="ri-thumb-up-line"></i>
-                <h3>Liked Videos</h3>
-            </div>
-            <div class="item">
-                <i class="ri-settings-3-line"></i>
-                <h3>Settings</h3>
-            </div>
+          </div>
         </div>
+      </div>
+      <span class="svg-wave">
+        <!-- <img class="svg-hero" src="images/applight-wave.svg" /> -->
+      </span>
+    </section>
 
-        <div class="sign-out">
-            <i class="ri-logout-box-r-line"></i>
-            <h3>Sign Out</h3>
-        </div>
+    <!-------Banner End------->
 
-    </div>
+    <!-------About End------->
 
-    <div class="main">
-        <div class="header">
-            <div class="search">
-                <button><i class="ri-search-2-line"></i></button>
-                <input type="text" placeholder="Search for videos...">
+    <section
+      id="aboutus"
+      class="about section-padding prelative"
+      data-scroll-index="1"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center">
+              <h3>About</h3>
+              <span class="line"></span>
+              <p class="description">
+                <b>Rafiq </b> is an innovative app designed to help users
+                discover new places and diverse experiences based on their
+                personal choices.
+              </p>
             </div>
-            <i class="ri-equalizer-2-line"></i>
-        </div>
+            <div class="section-content text-center">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <!-- <i class="fa fa-life-ring" aria-hidden="true"></i> -->
+                    <h5>Options to fit your budget</h5>
+                    <p class="description">
+                      In Rafiq, we always take your budget into account when
+                      making suggestions. Thanks to the budget feature, you can
+                      choose activities and places that fit your financial
+                      capacity.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                    <i class="fa-solid fa-globe"></i>
 
-        <div class="banner">
-            <div class="share">
-                <i class="ri-share-forward-line"></i>
-                <i class="ri-more-fill"></i>
-            </div>
-            <div class="video-info">
-                <div class="item">
-                    <h3>Today's Popular Video :</h3>
+                    <h5>Discover places with one touch</h5>
+                    <p class="description">
+                      The Rafiq app gives you the ability to discover a wide
+                      range of unique places that may be out of your reach or
+                      that you have never thought of visiting before.
+                    </p>
+                  </div>
                 </div>
-                <div class="item">
-                    <i class="ri-thumb-up-line"></i>
-                    <h3>230</h3>
-                </div>
-                <div class="item">
-                    <i class="ri-eye-line"></i>
-                    <h3>1920</h3>
-                </div>
-                <div class="item">
-                    <i class="ri-calendar-line"></i>
-                    <h3>20 Mar</h3>
-                </div>
-                <div class="item">
-                    <i class="ri-bookmark-line"></i>
-                    <h3>310</h3>
-                </div>
-            </div>
-            <video src="assets/videos/banner.mp4" muted loop></video>
-        </div>
+                <div class="col-md-4">
+                  <div class="icon-box wow fadeInUp" data-wow-delay="0.6s">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
 
-        <div class="separator">
-            <h3>Discover World</h3>
-            <div class="categories">
-                <a class="active">All</a>
-                <a>New to you</a>
-                <a>Live</a>
-                <a>Gaming</a>
-                <a>Music</a>
-                <a>Cartoons</a>
-                <a>Challenges</a>
-                <a>Visual Arts</a>
-                <a>Trends</a>
-            </div>
-        </div>
-
-        <div class="video-items">
-            <div class="item">
-                <div class="like">
-                    <i class="ri-heart-3-fill"></i>
+                    <h5>Available on your mobile phone</h5>
+                    <p class="description">
+                      You can access the Rafiq app directly from your mobile
+                      device, allowing you to easily explore new places and book
+                      your favorite activities, anytime, anywhere.
+                    </p>
+                  </div>
                 </div>
-                <video src="assets/videos/video-1.mp4" muted loop></video>
-                <div class="details">
-                    <h3>Animal On Winter</h3>
-                    <div class="info">
-                        <div class="location">
-                            <i class="ri-map-pin-line"></i>
-                            <h5>Canada</h5>
-                        </div>
-                        <div class="rate">
-                            <i class="ri-star-fill"></i>
-                            <h5>4.9</h5>
-                        </div>
+              </div>
+              <!-- <a href="" class="about-btn">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------About End------->
+
+    <!-------Video Start------->
+    <section class="video-section prelative text-center white">
+      <div class="section-padding video-overlay">
+        <div class="container">
+          <h3>Watch Now</h3>
+          <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
+          <div class="video-popup">
+            <div class="video-src">
+              <div class="iframe-src">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/81jQ8bJYXpU?si=oYMQExQMSO7qlT3O"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------Video End------->
+
+    <!-------SERVICES Start------->
+    <section class="feature section-padding" data-scroll-index="2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center">
+              <h3>SERVICES</h3>
+              <span class="line"></span>
+              <p class="description">
+                <b>Rafiq </b>app offers you a range of premium services that
+                make discovering places and booking activities simple and fun.
+              </p>
+            </div>
+            <div class="section-content text-center">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <div
+                    class="media single-feature wow fadeInUp"
+                    data-wow-delay="0.2s"
+                  >
+                    <div class="media-body text-right media-right-margin">
+                      <h5>"Customized Suggestions"</h5>
+                      <p class="description">
+                        We analyze your interests and budget to provide you with
+                        suggestions for places and activities that suit your
+                        personal taste, whether you are looking for restaurants,
+                        tourist attractions, or sports activities.
+                      </p>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="like">
-                    <i class="ri-heart-3-fill"></i>
-                </div>
-                <video src="assets/videos/video-2.mp4" muted loop></video>
-                <div class="details">
-                    <h3>Waves Rushing</h3>
-                    <div class="info">
-                        <div class="location">
-                            <i class="ri-map-pin-line"></i>
-                            <h5>Spain</h5>
-                        </div>
-                        <div class="rate">
-                            <i class="ri-star-fill"></i>
-                            <h5>4.3</h5>
-                        </div>
+                    <div class="media-right icon-border">
+                      <span><i class="fa-solid fa-sliders"></i></span>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="like">
-                    <i class="ri-heart-3-fill"></i>
-                </div>
-                <video src="assets/videos/video-3.mp4" muted loop></video>
-                <div class="details">
-                    <h3>Awesome Video</h3>
-                    <div class="info">
-                        <div class="location">
-                            <i class="ri-map-pin-line"></i>
-                            <h5>USA</h5>
-                        </div>
-                        <div class="rate">
-                            <i class="ri-star-fill"></i>
-                            <h5>4.8</h5>
-                        </div>
+                  </div>
+                  <div
+                    class="media single-feature wow fadeInUp"
+                    data-wow-delay="0.4s"
+                  >
+                    <div class="media-body text-right media-right-margin">
+                      <h5>"Direct booking"</h5>
+                      <p class="description">
+                        Once you have chosen the right place, you can easily
+                        book activities or venues, whether it is a restaurant, a
+                        hotel or a ticket to a special event.
+                      </p>
                     </div>
+                    <div class="media-right icon-border">
+                      <span>
+                        <i class="fa-solid fa-house-circle-check"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="media single-feature wow fadeInUp"
+                    data-wow-delay="0.6s"
+                  >
+                    <div class="media-body text-right media-right-margin">
+                      <h5>"Explore nearby places"</h5>
+                      <p class="description">
+                        Using geolocation technology, the app lets you discover
+                        places and activities near you, making it easier for you
+                        to make quick decisions on the go.
+                      </p>
+                    </div>
+                    <div class="media-right icon-border">
+                      <span><i class="fa-solid fa-globe"></i></span>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-4 d-none d-md-block d-lg-block">
+                  <div class="feature-mobile">
+                    <img
+                      src="images/rafiq services.png"
+                      class="img-fluid wow fadeInUp"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <div
+                    class="media single-feature wow fadeInUp"
+                    data-wow-delay="0.2s"
+                  >
+                    <div class="media-left icon-border media-right-margin">
+                      <span>
+                        <i class="fa-solid fa-sack-dollar"></i>
+                      </span>
+                    </div>
+                    <div class="media-body text-left">
+                      <h5>"budget organization"</h5>
+                      <p class="description">
+                        You can set your budget in advance, and we will provide
+                        you with suggestions that suit your financial capacity,
+                        whether you are looking for economical or luxury
+                        options.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="media single-feature wow fadeInUp"
+                    data-wow-delay="0.4s"
+                  >
+                    <div class="media-left icon-border media-right-margin">
+                      <span><i class="fa-solid fa-location-arrow"></i></span>
+                    </div>
+                    <div class="media-body text-left">
+                      <h5>"Easy and quick experience"</h5>
+                      <p class="description">
+                        With a simple and smooth design that makes navigating
+                        between pages quick, and ensures you get what you want
+                        with minimal effort.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="media single-feature wow fadeInUp"
+                    data-wow-delay="0.6s"
+                  >
+                    <div class="media-left icon-border media-right-margin">
+                      <span><i class="fa-regular fa-star"></i></span>
+                    </div>
+                    <div class="media-body text-left">
+                      <h5>Reviews and Ratings</h5>
+                      <p class="description">
+                        You can view other users' reviews and opinions about
+                        places and activities, helping you make an informed
+                        decision before booking.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-------SERVICES End------->
 
-    </div>
-
-    <div class="right-section">
-        <div class="profile">
-            <div class="info">
-                <i class="ri-user-3-line"></i>
-                <h5>Welcome Reza!</h5>
+    <!-------Team Start------->
+    <!-- <section class="team section-padding" data-scroll-index="3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center">
+              <h3>Our Team</h3>
+              <span class="line"></span>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
             </div>
-            <div class="user">
-                <i class="ri-notification-2-line"></i>
-                <img src="assets/images/profile.png">
+            <div class="section-content text-center">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="team-detail wow bounce" data-wow-delay="0.2s">
+                    <img src="images/user1.jpg" class="img-fluid" />
+                    <h4>Nitu Singh</h4>
+                    <p>Marketing Specialist</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                  <div class="team-detail wow bounce" data-wow-delay="0.4s">
+                    <img src="images/user2.jpg" class="img-fluid" />
+                    <h4>Yogesh Singh</h4>
+                    <p>CEO & Founder</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="team-detail wow bounce" data-wow-delay="0.6s">
+                    <img src="images/user3.jpg" class="img-fluid" />
+                    <h4>Nisha Sharma</h4>
+                    <p>Web Developer</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section> -->
 
-        <h3>Nature Playlist</h3>
+    <!-------Team End------->
 
-        <div class="playlist">
-            <video src="assets/videos/playlist.mp4" muted loop></video>
-            <div class="other">
-                <img src="assets/images/playlist-1.jpg">
-                <img src="assets/images/playlist-2.jpg">
-                <img src="assets/images/playlist-3.jpg">
-                <img src="assets/images/playlist-4.jpg">
+    <!-------Testimonial Start------->
+    <section class="testimonial section-padding" data-scroll-index="4">
+      <div class="container">
+        <!--Font Awesome CDN-->
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center white">
+              <h3 style="color: white">GALLERY</h3>
+              <span class="line"></span>
+              <p class="white" style="color: #fafafa !important">
+                Explore the world of images and immerse yourself in the beauty
+                of moments. We offer you a variety of high-quality images that
+                will capture your heart and mind.
+              </p>
             </div>
+
+            <section class="container2">
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <img
+                    id="slide-1"
+                    src="images/simon-berger-boyXZfqpwpU-unsplash.jpg"
+                    alt="3D rendering of an imaginary orange planet in space"
+                  />
+                  <img
+                    id="slide-2"
+                    src="images/mo-gabrail-iuC3w8mLDcs-unsplash.jpg"
+                    alt="3D rendering of an imaginary orange planet in space"
+                  />
+                  <img
+                    id="slide-3"
+                    src="images/farah-samy-29Y5RyH16Ws-unsplash.jpg"
+                    alt="3D rendering of an imaginary orange planet in space"
+                  />
+                  <img
+                    id="slide-4"
+                    src="images/omar-elsharawy-pwMbtwA9LRc-unsplash.jpg"
+                    alt="3D rendering of an imaginary orange planet in space"
+                  />
+                  <img
+                    id="slide-5"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/6f/69/3f/img-20160529-wa0011-largejpg.jpg?w=900&h=500&s=1"
+                    alt="3D rendering of an imaginary green planet in space"
+                  />
+                </div>
+                <div class="slider-nav">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                </div>
+              </div>
+            </section>
+            <!-- <div class="section-content">
+              <div class="row">
+                <div class="offset-md-2 col-md-8 col-sm-12">
+                  <div class="slider">
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/khan-el-khalili.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>khan-el-khalili</span> cairo</span
+                        >
+                        Consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat.
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/Qaitbay Citadel1.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>Qaitbay Citadel</span> Alexandria</span
+                        >
+                        Euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat. Ut wisi enim ad minim veniam, quis nostrud v
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/Roman Theater.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>Roman Theater</span> Alexandria</span
+                        >
+                        Consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                      
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/Greco-Roman Museum.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>Greco-Roman Museum</span> Alexandria</span
+                        >
+                        Consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat.
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/Amr ibn al-Aas Mosque.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>Amr ibn al-Aas Mosque</span> Cairo</span
+                        >
+                        Consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat.
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/Alexandria Library.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>Alexandria Library</span> Alexandria</span
+                        >
+                        Euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat. Ut wisi enim ad minim veniam, quis nostrud v
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
         </div>
+      </div>
+    </section>
 
-        <h3>Current Playing</h3>
+    <!-------Testimonial End------->
 
-        <div class="player">
-            <div class="content">
-                <img src="assets/images/playlist-4.jpg">
-                <div class="info">
-                    <h5>Germany Travel Tour</h5>
-                    <div class="rate">
-                        <i class="ri-star-fill"></i>
-                        <h5>4.7</h5>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero...</p>
-                </div>
+    <!-------FAQ Start------->
+    <section class="faq section-padding prelative" data-scroll-index="5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center">
+              <h3>Frequently Asked Questions</h3>
+              <span class="line"></span>
+              <p class="description">
+                A set of frequently asked questions (FAQ) that may come to mind
+                for users when using the <b>“Rafiq”</b> application and their
+                answers:
+              </p>
             </div>
-            <i class="ri-pause-large-line"></i>
+            <div class="section-content">
+              <div class="row">
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.2s"
+                >
+                  <h4>How can I use the Rafiq app?</h4>
+                  <p class="description">
+                    To use the Rafiq app, download it from the app store, then
+                    open the app and follow the registration or login steps.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.2s"
+                >
+                  <h4>Can I explore places near me?</h4>
+                  <p class="description">
+                    Yes, Rafiq app uses geolocation technology to display places
+                    and activities available near you. Once you enable location,
+                    the app will display various options near you to make the
+                    selection process easier.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.4s"
+                >
+                  <h4>Can I customize suggestions based on my interests?</h4>
+                  <p class="description">
+                    Yes, Rafiq provides personalized suggestions based on your
+                    personal interests and budget. Once you specify your
+                    interests such as type of activity or preferred destination,
+                    the app will provide the best options that suit you.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.4s"
+                >
+                  <h4>Can I set my budget?</h4>
+                  <p class="description">
+                    Of course! The Rafiq app allows you to set your budget
+                    before exploring places. Based on that, you will be able to
+                    easily find activities and places that fit your budget.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.6s"
+                >
+                  <h4>How do I book a venue or activity?</h4>
+                  <p class="description">
+                    After choosing the place or activity you like, you can
+                    simply click on the “Book Now” or “Book” button to go to the
+                    booking page. Follow the required steps, such as selecting
+                    the date and time of the reservation, then complete the
+                    payment process if necessary.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.6s"
+                >
+                  <h4>Can I modify the reservation after it is confirmed?</h4>
+                  <p class="description">
+                    It depends on the type of activity or venue. Some activities
+                    and hotels allow you to modify your reservation, while
+                    others may require you to cancel your reservation and make a
+                    new one. You can always contact customer service for
+                    assistance.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.6s"
+                >
+                  <h4>Can I see other users' reviews?</h4>
+                  <p class="description">
+                    Yes, you can view other users' reviews and opinions about
+                    places and activities within the app. These reviews will
+                    help you make an informed decision before booking.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 faq-content wow fadeInUp"
+                  data-wow-delay="0.6s"
+                >
+                  <h4>Does the app offer special offers or discounts?</h4>
+                  <p class="description">
+                    Yes! Rafeeq app offers exclusive offers and discounts to
+                    users from time to time. Make sure to check the offers
+                    section within the app to avail the latest discounts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <h3>Weekly Popular</h3>
+    <!-------FAQ End------->
 
-        <div class="weekly">
-            <div class="item">
-                <div class="content">
-                    <img src="assets/images/weekly-1.jpg">
-                    <div class="info">
-                        <h4>Sea Balloon</h4>
-                        <div class="view">
-                            <i class="ri-eye-fill"></i>
-                            <h5>2,320</h5>
-                        </div>
-                    </div>
-                </div>
-                <i class="ri-heart-3-fill"></i>
+    <!-------Contact Start------->
+    <section class="contact section-padding" data-scroll-index="6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center">
+              <h3>Contact us</h3>
+              <span class="line"></span>
+              <p class="description">
+                We are always here to listen to you and help you with any
+                questions or issues you may have. Whether you need technical
+                assistance, a booking inquiry, or would like to provide
+                feedback, the <b>Rafiq</b> team is always ready to support you.
+              </p>
             </div>
-            <div class="item">
-                <div class="content">
-                    <img src="assets/images/weekly-2.jpg">
-                    <div class="info">
-                        <h4>Flower</h4>
-                        <div class="view">
-                            <i class="ri-eye-fill"></i>
-                            <h5>2,490</h5>
-                        </div>
+            <div class="section-content">
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                  <form id="contact_form" action="">
+                    <div class="row">
+                      <div class="col">
+                        <input
+                          type="text"
+                          id="your_name"
+                          class="form-input w-100"
+                          name="full-name"
+                          placeholder="Full Name"
+                          required
+                        />
+                      </div>
+                      <div class="col">
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-input w-100"
+                          name="email"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
                     </div>
+                    <input
+                      type="text"
+                      id="subject"
+                      class="form-input w-100"
+                      name="subject"
+                      placeholder="Subject"
+                    />
+                    <textarea
+                      class="form-input w-100"
+                      id="message"
+                      placeholder="Message"
+                      name="message"
+                    ></textarea>
+                    <button
+                      class="btn-grad w-100 text-uppercase"
+                      type="submit"
+                      name="button"
+                    >
+                      submit
+                    </button>
+                  </form>
                 </div>
-                <i class="ri-heart-3-fill"></i>
-            </div>
-            <div class="item">
-                <div class="content">
-                    <img src="assets/images/weekly-3.jpg">
-                    <div class="info">
-                        <h4>Street</h4>
-                        <div class="view">
-                            <i class="ri-eye-fill"></i>
-                            <h5>1,420</h5>
-                        </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                  <div class="contact-info white">
+                    <div class="contact-item media">
+                      <i
+                        class="fa fa-map-marker-alt media-left media-right-margin"
+                      ></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Address</p>
+                        <p class="text-uppercase">Cairo-Egypt</p>
+                      </div>
                     </div>
-                </div>
-                <i class="ri-heart-3-fill"></i>
-            </div>
-            <div class="item">
-                <div class="content">
-                    <img src="assets/images/weekly-4.jpg">
-                    <div class="info">
-                        <h4>Sea Water</h4>
-                        <div class="view">
-                            <i class="ri-eye-fill"></i>
-                            <h5>9,610</h5>
-                        </div>
+                    <div class="contact-item media">
+                      <i class="fa fa-mobile media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Phone</p>
+                        <p class="text-uppercase">
+                          <a class="text-white" href="tel:+15173977100"
+                            >01022580327</a
+                          >
+                        </p>
+                      </div>
                     </div>
+                    <div class="contact-item media">
+                      <i
+                        class="fa fa-envelope media-left media-right-margin"
+                      ></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">E-mail</p>
+                        <p class="text-uppercase">
+                          <a class="text-white" href="mailto:abcdefg@gmail.com"
+                            >abdosamir74274@gmail.com</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="contact-item media">
+                      <i class="fa fa-clock media-left media-right-margin"></i>
+                      <div class="media-body">
+                        <p class="text-uppercase">Working Hours</p>
+                        <p class="text-uppercase">Mon-Fri 9.00 AM to 5.00PM.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <i class="ri-heart-3-fill"></i>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
+    <!-------Contact End------->
 
-    <script src="script.js"></script>
-</body>
+    <!-------Download End------->
+    <section class="download section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sectioner-header text-center white">
+              <h3>Download Rafiq</h3>
+              <span class="line"></span>
+              <p class="white" style="color: #fafafa !important">
+                Don't miss the opportunity to explore the best places and
+                activities with ease and in a way that is customized to your
+                interests and budget. With the "Rafiq" application, you will
+                have a personal guide to help you discover everything new around
+                you, with instant booking options and the latest offers.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="section-content text-center">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="images/appstore.png"
+                      class="wow fadeInUp"
+                      data-wow-delay="0.4s"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="images/playstore.png"
+                      class="wow fadeInUp"
+                      data-wow-delay="0.7s"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-------Download End------->
+
+    <!-- <footer class="footer-copy">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              2018 &copy; Applight. Website Designed by
+              <a href="http://w3Template.com" target="_blank" rel="dofollow"
+                >W3 Template</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW();
+      wow.init();
+      $(document).ready(function (e) {
+        $("#video-icon").on("click", function (e) {
+          e.preventDefault();
+          $(".video-popup").css("display", "flex");
+          $(".iframe-src").slideDown();
+        });
+        $(".video-popup").on("click", function (e) {
+          var $target = e.target.nodeName;
+          var video_src = $(this).find("iframe").attr("src");
+          if ($target != "IFRAME") {
+            $(".video-popup").fadeOut();
+            $(".iframe-src").slideUp();
+            $(".video-popup iframe").attr("src", " ");
+            $(".video-popup iframe").attr("src", video_src);
+          }
+        });
+
+        $(".slider").bxSlider({
+          pager: false,
+        });
+      });
+
+      $(window).on("scroll", function () {
+        var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+        if (bodyScroll > 50) {
+          $(".navbar-logo img").attr("src", "images/logo50.svg");
+          navbar.addClass("nav-scroll");
+        } else {
+          $(".navbar-logo img").attr("src", "images/logo50.svg");
+          navbar.removeClass("nav-scroll");
+        }
+      });
+      $(window).on("load", function () {
+        var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+        if (bodyScroll > 50) {
+          $(".navbar-logo img").attr("src", "images/logo50.svg");
+          navbar.addClass("nav-scroll");
+        } else {
+          $(".navbar-logo img").attr("src", "images/logo50.svg");
+          navbar.removeClass("nav-scroll");
+        }
+
+        $.scrollIt({
+          easing: "swing", // the easing function for animation
+          scrollTime: 900, // how long (in ms) the animation takes
+          activeClass: "active", // class given to the active nav element
+          onPageChange: null, // function(pageIndex) that is called when page is changed
+          topOffset: -63,
+        });
+      });
+    </script>
+  </body>
 </html>
