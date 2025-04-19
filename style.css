@@ -87,7 +87,7 @@ h6 {
 }
 
 .navbar .navbar-toggler span {
-	color: #F5E8C1;
+	color: #681F00;
 }
 
 .navbar-style2 .active:after,
@@ -121,7 +121,7 @@ h6 {
 }
 
 .nav-scroll .nav-link:hover:after {
-	background-color: #2388ed;
+	background-color: #000000;
 }
 
 .nav-scroll .active {
@@ -156,40 +156,41 @@ h6 {
 }
 
 .row-1 {
-	
+
 	padding-top: 40px;
 }
+
 .search-container {
 	background-color: #fff;
 	padding: 10px;
 	border-radius: 12px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	display: flex;
 	gap: 10px;
 	flex-wrap: wrap;
 	align-items: center;
-	
-  }
-  
-  .search-input {
+
+}
+
+.search-input {
 	flex: 1;
 	min-width: 180px;
 	padding: 10px;
 	border-bottom: 1px solid #ccc;
 	border-radius: 8px;
 	margin: 10px;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	background: #fff;
 	min-width: 160px;
-  }
-  
-   
-  .search-button {
+}
+
+
+.search-button {
 	background-color: #7a2e00;
 	color: #F6F2D7;
 	border: none;
@@ -197,19 +198,19 @@ h6 {
 	border-radius: 8px;
 	cursor: pointer;
 	transition: background 0.3s;
-  }
-  
-  .search-button:hover {
+}
+
+.search-button:hover {
 	background-color: transparent;
 	color: #681F00;
 	border: 1px solid #681F00;
-  }
-  
-  .note {
+}
+
+.note {
 	margin-top: 10px;
 	font-size: 14px;
 	color: #555;
-  }
+}
 
 
 
@@ -319,7 +320,7 @@ h6 {
 	width: 135px;
 	height: 135px;
 	border-radius: 100px;
-	background: #7a60ff;
+	background: #521800;
 	background: linear-gradient(to right, #521800, #B83700);
 
 	color: #F6F2D7;
@@ -477,7 +478,7 @@ h6 {
 }
 
 .testimonial {
-	background: #7a60ff;
+	background: #521800;
 	background: linear-gradient(to right, #521800, #B83700);
 
 	padding: 100px 0px;
@@ -672,7 +673,7 @@ input {
 	color: #fff;
 	border-radius: 2rem;
 	border: 0;
-	background: #7a60ff;
+	background: #521800;
 	background: linear-gradient(to right, #521800, #B83700);
 
 	cursor: pointer;
@@ -681,7 +682,7 @@ input {
 .contact-info {
 	padding: 1rem 2rem 1rem;
 	border-radius: 8px;
-	background: #7a60ff;
+	background: #521800;
 	background: linear-gradient(to right, #521800, #B83700);
 
 
@@ -710,7 +711,7 @@ input {
 }
 
 .download {
-	background: #7a60ff;
+	background: #521800;
 	background: linear-gradient(to right, #521800, #B83700);
 
 	padding: 100px 0px;
@@ -769,7 +770,7 @@ input {
 @media all and (max-width:991px) {
 	.navbar .navbar-collapse {
 		overflow: auto;
-		background: rgb(213, 198, 221);
+		background: rgb(243, 226, 176);
 		color: #fff !important;
 		text-align: center;
 		padding: 10px 0;
