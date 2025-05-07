@@ -6,6 +6,9 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
+	direction: rtl;
+	text-align: right;
+	font-family: 'Cairo', sans-serif;
 }
 
 a {
@@ -65,6 +68,36 @@ h6 {
 	margin: 0 5px;
 	padding: 0;
 }
+
+.navbar-nav {
+	display: flex;
+	gap: 30px;
+	margin-right: auto;
+	align-items: center;
+}
+
+.navbar-nav .nav-link {
+	font-weight: 500;
+	font-size: 16px;
+	color: #000;
+	transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+	color: #c1440e;
+	text-decoration: underline;
+}
+
+.navbar-nav {
+	direction: rtl;
+}
+
+
+.navbar-brand {
+	margin-left: auto;
+}
+
 
 .navbar .nav-item a {
 	color: #681F00;
@@ -127,6 +160,13 @@ h6 {
 .nav-scroll .active {
 	position: relative;
 }
+
+
+
+
+
+
+
 
 .banner {
 	background: #681F00;
@@ -469,6 +509,8 @@ input {
 	color: #fff;
 	font-weight: 500;
 }
+
+
 
 .contact-info i {
 	color: #fff;
