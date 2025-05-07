@@ -356,74 +356,7 @@ h6 {
 	text-decoration: none;
 }
 
-.video-section {
-	background: url(images/Rafeeq.png) no-repeat fixed center;
-	background-size: cover;
-	overflow: hidden;
-}
 
-.video-overlay {
-	background: linear-gradient(to right, rgba(82, 24, 128, 0.5), rgba(136, 55, 0, 0.9));
-
-}
-
-.video-section h3 {
-	font-weight: 600;
-	font-size: 38px;
-}
-
-.video-section i {
-	display: block;
-	position: relative;
-	width: 70px;
-	height: 70px;
-	border-radius: 100px;
-	background: #F6F2D7;
-	color: #681F00;
-	font-size: 30px;
-	line-height: 70px;
-	margin: 0 auto;
-	cursor: pointer;
-}
-
-.video-popup {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 99999;
-	background: rgba(0, 0, 0, 0.5);
-	display: none;
-	align-content: center !important;
-	-ms-flex-line-pack: center !important;
-	-ms-flex-align: center !important;
-	align-items: center !important;
-	-ms-flex-pack: center !important;
-	justify-content: center !important;
-}
-
-.video-popup .video-src {
-	position: relative;
-	width: 700px;
-	max-width: 80%;
-}
-
-.video-popup .iframe-src {
-	width: 100%;
-	height: 0;
-	padding-top: 56.3%;
-	position: relative;
-	display: none;
-}
-
-.video-popup .iframe-src iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 .single-feature {
 	margin-bottom: 80px;
@@ -442,7 +375,7 @@ h6 {
 	font-size: 13px;
 }
 
-.icon-border {}
+
 
 .icon-border span {
 	display: block;
@@ -456,163 +389,7 @@ h6 {
 	border: 1px solid #681F00;
 }
 
-.team {
-	background: #fafafa;
-	border-top: 1px solid #e4e4e4;
-}
 
-.team-detail {
-	margin-top: 40px;
-}
-
-.team-detail img {
-	border-radius: 50%;
-	width: 70%;
-}
-
-.team-detail h4 {
-	color: #681F00;
-	margin-top: 20px;
-	font-size: 17px;
-	margin-bottom: 0px;
-}
-
-.testimonial {
-	background: #521800;
-	background: linear-gradient(to right, #521800, #B83700);
-
-	padding: 100px 0px;
-	position: relative;
-}
-
-.testimonial::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url(images/pattern.png);
-}
-
-.container2 {
-	padding: 2rem;
-
-}
-
-.slider-wrapper {
-	position: relative;
-	max-width: 48rem;
-	margin: 0 auto;
-}
-
-.slider {
-	display: flex;
-	aspect-ratio: 16 / 9;
-	height: 500px;
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-	border-radius: 0.5rem;
-	-ms-overflow-style: none;
-	/* Hide scrollbar IE and Edge */
-	scrollbar-width: none;
-	/* Hide scrollbar Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.slider::-webkit-scrollbar {
-	display: none;
-}
-
-.slider img {
-	/* flex: 1 0 100%; */
-	scroll-snap-align: start;
-	/* object-fit: cover; */
-}
-
-.slider-nav {
-	display: flex;
-	column-gap: 1rem;
-	position: absolute;
-	bottom: 1.25rem;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
-}
-
-.slider-nav a {
-	width: 0.8rem;
-	height: 0.8rem;
-	border-radius: 50%;
-	background-color: #fff;
-	opacity: 0.75;
-	transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-	opacity: 1;
-}
-
-.bx-prev {
-	left: -90px !important;
-	background: url(images/arrow-left.png) no-repeat !important;
-	background-size: auto auto !important;
-	background-size: 100% 100% !important;
-}
-
-.bx-next {
-	right: -90px !important;
-	background: url(images/arrow-right.png) no-repeat !important;
-	background-size: auto auto !important;
-	background-size: 100% 100% !important;
-
-}
-
-.bx-wrapper {
-	border: none !important;
-	background: rgba(255, 255, 255, 0.81) !important;
-	border-radius: 5px !important;
-	box-shadow: none !important;
-}
-
-.slider-item {
-	padding: 20px;
-}
-
-.slider .test-img img {
-	border: 12px solid #fff;
-	border-radius: 50%;
-	width: 100%;
-	height: auto;
-}
-
-.test-img {
-	float: left;
-	width: 20%;
-	margin-right: 5%;
-}
-
-.test-text {
-	float: left;
-	width: 75%;
-}
-
-.slider .title {
-	display: block;
-	position: relative;
-	margin: 0 0 20px;
-	font-size: 1.125em;
-	line-height: 1.25;
-}
-
-.slider .title span {
-	display: block;
-	font-size: 1.5em;
-	font-weight: 700;
-}
 
 
 .faq {
@@ -755,17 +532,7 @@ input {
 	border-radius: 7px;
 }
 
-.footer-copy {
-	background: #F6F2D7;
-	color: #242424;
-	font-size: 13px;
-	text-align: center;
-	padding: 15px 0px;
-}
 
-.footer-copy p {
-	margin-bottom: 0px;
-}
 
 @media all and (max-width:991px) {
 	.navbar .navbar-collapse {
