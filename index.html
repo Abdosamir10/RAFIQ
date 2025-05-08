@@ -14,6 +14,11 @@
       integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <link rel="icon" href="images/Group 81.svg" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
@@ -23,12 +28,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Font Google -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
@@ -41,7 +41,12 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand navbar-logo" href="#">
-          <img src="images/logo50.svg" alt="logo" class="logo-1" />
+          <img
+            src="images/logo50.svg"
+            alt="logo"
+            class="logo-1"
+            id="rafiq-logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -57,24 +62,50 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="" data-scroll-nav="0"
+              <a
+                class="nav-link"
+                href=""
+                data-scroll-nav="0"
+                style="font-size: 2vh"
                 >الصفحة الرئيسية</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="1">عنا</a>
+              <a
+                class="nav-link"
+                href="#"
+                data-scroll-nav="1"
+                style="font-size: 2vh"
+                >عنا</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="2">الخدمات</a>
+              <a
+                class="nav-link"
+                href="#"
+                data-scroll-nav="2"
+                style="font-size: 2vh"
+                >الخدمات</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="5"
+              <a
+                class="nav-link"
+                href="#"
+                data-scroll-nav="5"
+                style="font-size: 2vh"
                 >الأسئلة الشائعة</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="6">تواصل معنا</a>
+              <a
+                class="nav-link"
+                href="#"
+                data-scroll-nav="6"
+                style="font-size: 2vh"
+                >تواصل معنا</a
+              >
             </li>
           </ul>
         </div>
@@ -89,9 +120,11 @@
           <div class="row">
             <div class="col-md-8 col-sm-12">
               <div class="banner-text">
-                <h2 class="white">مرحبًا بك في مجتمع رفيق الأكثر أمانا</h2>
+                <h2 id="typewriter" class="white">
+                  مرحباً بك في مجتمع رفيق الأكثر أمانا
+                </h2>
 
-                <p class="banner-text white">
+                <p class="banner-text white" style="color: #555555 !important">
                   نسعى لإراحتك بكل الوسائل في إختيار وجهتك القادمة , رفيق
                   كالصديق بجانبك في كل وقت وفي كل مكان .
                 </p>
@@ -105,11 +138,59 @@
             <div class="col-md-4 col-sm-12">
               <img
                 src="images/Rafiq home.png"
-                class="wow fadeInUp"
-                style="height: 400px; max-width: 100%"
+                class="wow fadeInUp floating"
+                style="height: 600px; max-width: 100%; padding: 50px 50px 0 0"
               />
               <!-- transform: rotate(15deg) -->
             </div>
+          </div>
+          <div class="row">
+            <div class="search-container">
+              <div class="input-icon">
+                <img src="images/MagnifyingGlass.svg" alt="" class="icon-img" />
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="ابحث عن المكان المناسب "
+                />
+              </div>
+
+              <div class="input-icon">
+                <img src="images/MapPin.svg" alt="" class="icon-img" />
+                <select class="dropdown">
+                  <option selected>عايز تخرج فين</option>
+                  <option>حدائق المعادي-القاهره</option>
+                  <option>مكتبة الاسكندريه-الاسكندرية</option>
+                  <option>حفلة سلطان الغناء العربي -جورج وسوف</option>
+                </select>
+              </div>
+
+              <div class="input-icon">
+                <img src="images/BagSimple.svg" alt="" class="icon-img" />
+                <select class="dropdown">
+                  <option selected>الميزانية التى تناسبك</option>
+                  <option>200 EGP</option>
+                  <option>500 EGP</option>
+                  <option>1000 EGP</option>
+                </select>
+              </div>
+
+              <div class="input-icon">
+                <img src="images/Funnel.svg" alt="" class="icon-img" />
+                <select class="dropdown">
+                  <option selected>نوع النشاط</option>
+                  <option>ترفيه</option>
+                  <option>مطاعم</option>
+                  <option>حفلات</option>
+                </select>
+              </div>
+
+              <button class="search-button">بحث عن المكان</button>
+            </div>
+
+            <p class="note">
+              الاكثر بحثا: الأماكن الشعبية المصرية ذات ميزانية متوسطة
+            </p>
           </div>
         </div>
       </div>
@@ -141,7 +222,7 @@
                 <div class="col-md-4">
                   <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                     <i class="fa-solid fa-sack-dollar"></i>
-                    <!-- <i class="fa fa-life-ring" aria-hidden="true"></i> -->
+
                     <h5>"متاح على هاتفك المحمول"</h5>
                     <p class="description">
                       يمكنك الوصول إلى تطبيق "رفيق" مباشرة عبر جهازك المحمول ،
@@ -607,6 +688,7 @@
     <!-- scrollIt js -->
     <script src="js/scrollIt.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
       wow = new WOW();
       wow.init();
