@@ -266,8 +266,12 @@ h6 {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	padding: 50px;
+	margin-top: 20px;
 }
-
+.banner-overlay .container .row {
+	margin-top: auto;
+}
 
 /* .banner::before {
 	content: "";
@@ -445,7 +449,7 @@ h6 {
 #typewriter {
 	direction: rtl;
 	font-family: 'Cairo', sans-serif;
-	font-size: 28px;
+	font-size: 35px;
 	white-space: nowrap;
 	overflow: hidden;
 	border-left: 3px solid #5e1f00; /* استخدم border-left للعربية */
